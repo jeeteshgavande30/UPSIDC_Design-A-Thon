@@ -1,0 +1,164 @@
+.j-div{
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.jeetesh{
+  width: 100%;
+}
+.j-slider{
+  max-width: 100vw;
+  margin: auto;
+  padding: 0 20px;
+}
+.j-slider .card{
+  height:250px;
+  color: black;
+  border-style: none;
+  background-color:	#F8F8F8;
+  justify-content: center;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.j-para{
+  font-size: 0.8em;
+  padding: 3px;
+  text-align: center;
+  font-weight: 600;
+  color: #004B8D;
+}
+.j-icon{
+  position: absolute;
+  left: 20px;
+  bottom:40px;
+}
+.j-date{
+  position: absolute;
+  bottom: 25px;
+  left:50px;
+  font-size: 0.6em;
+  opacity: 0.8;
+  text-align: left;
+}
+.j-link{
+  position:absolute;
+  bottom: 35px;
+  right: 10px;
+  color:#002852;
+  text-align: right;
+  transition: 0.5s;
+}
+.j-link:hover{
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.j-drop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  max-width: 100vw;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.j-accordion{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.j-accordion .j-cotent8x{
+  width: 40vw;
+  margin: 10px 20px;
+}
+@media screen and (max-width: 720px){
+  .j-accordion{
+    flex-direction: column;
+  }
+  .j-accordion .j-cotent8x{
+    width: 90vw;
+  }
+}
+.j-accordion .j-cotent8x .j-label{
+  position: relative;
+  padding: 15px;
+  background:#fff;
+  color: #002852;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0,0,0,0.15);
+  cursor: pointer;
+  font-weight: 500;
+}
+.j-accordion .j-cotent8x .j-label:hover{
+  background: #002852 !important;
+  color: #fff !important;
+}
+.j-accordion .j-cotent8x .j-label::before{
+  content:'\276C';
+  position: absolute;
+  top:10%;
+  right:20px;
+  transform: rotate(-90deg);
+  transition: 0.2s;
+  font-size: 1.5em;
+}
+
+.j-accordion .j-cotent8x.active .j-label::before{
+  transform: rotate(90deg);
+  transition: 0.2s;
+}
+.j-accordion .j-cotent8x .j-content{
+  position: relative;
+  background:#fff;
+  height: 0;
+  transition:ease-out 0.2s;
+  overflow-y: auto;
+}
+.j-accordion .j-cotent8x.active .j-content{
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 4px;
+  height: auto;
+  padding: 10px;
+}
+
+
+.color-change{
+  background: #002852 !important;
+  color: #fff !important;
+}
+.color-change2{
+  background: #fff !important;
+  color: #002852 !important;
+}
+
+.btn-news-letter-1 {
+  border: 1px solid #37ae87;
+  background-color: #37AE87;
+  color: white;
+  transition: 0.5s;
+  bottom: 0px;
+  position: relative;
+  font-weight: 500;
+}
+.btn-news-letter-1:hover {
+  bottom: 3px;
+  color: white;
+  transition: 0.5s;
+  position: relative;
+}
+.btn-news-letter-2 {
+  background-color: #ecf9f5;
+  color: #37AE87;
+  transition: 0.5s;
+  bottom: 0px;
+  position: relative;
+  font-weight: 500;
+}
+.btn-news-letter-2:hover {
+  bottom: 3px;
+  color: #37AE87;
+  transition: 0.5s;
+  position: relative;
+}

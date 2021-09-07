@@ -1,0 +1,61 @@
+.poli .nav .nav-tabs {
+    float: left;
+    display: block;
+    width: 100%;
+    margin-right: 20px;
+    border-bottom:0;
+    border-right: 1px solid #ddd;
+    padding-right: 15px;
+}
+.poli .nav-tabs .nav-link {
+    color: #002852;
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+.poli .nav-tabs .nav-link.active {
+    color: white !important;
+    background-color:#002852 !important;
+    border-radius: 10px;
+    border-color: transparent !important;
+}
+.poli .row{
+  padding-bottom: 25px;
+}
+.poli h3{
+  text-align: center;
+}
+.img-sm{
+  height: 350px;
+}
+.polibg h1{
+  color: #002852;
+  font-size: 50px;
+  font-weight: bold;
+}
+#tab2, #tab4, #tab6, #tab8{
+  background-color: #dee2e6;
+}
+@media only screen and (min-width: 600px) {
+.sid{
+  display: flex;
+  justify-content: center;
+  }
+  .drop-wid a{
+    width: 500px;
+  }
+
+}
+@media only screen and (max-width: 500px) {
+  .drop-wid a{
+    width: 400px;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  .drop-wid a{
+    width: 300px;
+  }
+
+}

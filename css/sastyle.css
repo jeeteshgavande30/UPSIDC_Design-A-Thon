@@ -1,0 +1,119 @@
+.wrapper{
+  width: 100%;
+}
+.s-carousel{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+.s-carousel .card{
+  color: #fff;
+  height: 350px;
+  font-size: 30px;
+  font-weight: 500;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+.cardtext{
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  background-size: cover;
+  margin-top: 65%;
+}
+.s-carousel .card-1{
+  background-image: url("../images/trangc.jpg");
+  background-size: cover;
+  display: flex;
+}
+.s-carousel .card-2{
+  background-image: url("../images/saraswati.jpg");
+  background-size: cover;
+}
+.s-carousel .card-3{
+  background-image: url("../images/563a3b65cb4f3.jpg");
+  background-size: cover;
+}
+.s-carousel .card-4{
+  background-image: url("../images/plasc.jpg");
+  background-size: cover;
+}
+.s-carousel .card-5{
+  background-image: url("../images/cor.jpg");
+  background-size: cover;
+}
+.s-carousel .card-6{
+  background-image: url("../images/Perfume_Park_and_Museum.jpg");
+  background-size: cover;
+}
+
+
+.sp1{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.sp11{
+  font-size: 20px;
+}
+.sw1{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.inv{
+  height: 100px;
+}
+@media only screen and (max-width: 1000px) {
+ .inv {
+    display: none;
+  }
+  .s-11{
+    padding-top: 10px;
+  }
+}
+
+
+.strip{
+  background-color: #002852;
+  margin-top: 20px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.strip .s-1{
+  margin-top: 15px;
+  text-align: right;
+}
+
+.sw1 a{
+  text-decoration: none;
+  color: #4267B2;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.btn-ss{
+  color: #002852;
+  background-color: white;
+  transition: 0.5s;
+  font-weight: 500;
+}
+.btn-ss:hover{
+  color: white;
+  background-color: #002852;
+}
+
+.award .tab-content{
+  padding: 20px 10px 0 10px;
+}
+.award .nav-link{
+  color: #002852;
+}
+
+.award .nav-link.active {
+  background-color: rgba(0, 40, 82, 0.8);
+  color: white;
+}

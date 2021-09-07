@@ -1,0 +1,122 @@
+.j-footer-div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: auto;
+    flex-direction: column;
+    margin-top: 20px;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background:#111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .j-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .j-footer .j-footer-about{
+    margin-right: 30px;
+    width:40%;
+}
+footer p{
+    color: #999;
+}
+.j-footer-social{
+    margin-top: 20px;
+    display: flex;
+}
+.j-footer-social li{
+    list-style: none;
+}
+.j-footer-social li a{
+   display: inline-block;
+   width: 40px;
+   height: 40px;
+   background: #222;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 10px;
+   text-decoration: none;
+   border-radius: 4px;
+}
+.j-footer-social li.facebook a:hover{
+    background: #4267B2;
+}
+.j-footer-social li.twitter a:hover {
+    background: #1DA1F2;
+}
+.fa{
+    color: white;
+}
+.j-footer h2{
+    position: relative;
+    left: 40px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.j-footer h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #37AE87;
+}
+.j-morelinks{
+    position: relative;
+    width: 30%;
+}
+.j-morelinks ul li{
+    display: flex;
+    margin-bottom: 5px;
+    list-style: none;
+}
+.j-morelinks ul li a{
+    color:#999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.j-morelinks ul li a:hover{
+    color:#fff;
+}
+.j-contact{
+    width:calc(25% - 60px);
+    margin-right: 0 !important;
+}
+.j-copyright{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+@media (max-width:800px) {
+    footer{
+        padding: 40px;
+        padding-left: 20px;
+    }
+    footer .j-footer{
+        flex-direction: column;
+    }
+    footer .j-footer .j-footer-about,.j-morelinks{
+        margin-right: 0;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .j-copyright{
+        padding: 8px 40px;
+    }
+}

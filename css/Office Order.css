@@ -1,0 +1,90 @@
+.j-contact-div {
+  width: 95vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.j-contact-div .j-contact-content h2 {
+  font-size: 3em;
+  text-align: center;
+  color: #002852;
+}
+.j-contact-div table thead {
+  background-color: #002852;
+  color: #fff;
+}
+.j-contact-div table a {
+    text-decoration: none;
+    color: #002852;
+  }
+@media only screen and (max-width: 1024px) {
+  #j-table table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  #j-table thead tr {
+    display: none;
+  }
+  #j-table tr {
+    border: 1px solid #ccc;
+  }
+  #j-table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    font-size: 1em;
+  }
+  #j-table td:before {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 6px;
+    left: 6px;
+    width: 50%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-size: 1em;
+  }
+  #j-table td:nth-of-type(1):before {
+    content: "S No.";
+  }
+  #j-table td:nth-of-type(2):before {
+    content: "Reference No.";
+  }
+  #j-table td:nth-of-type(3):before {
+    content: "Year";
+  }
+  #j-table td:nth-of-type(4):before {
+    content: "Date of Issue";
+  }
+  #j-table td:nth-of-type(5):before {
+    content: "Section";
+  }
+  #j-table td:nth-of-type(6):before {
+    content: "Category";
+  }
+  #j-table td:nth-of-type(7):before {
+    content: "Key Words / Meta Data";
+  }
+  #j-table td:nth-of-type(8):before {
+    content: "More Details";
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #j-table td {
+    padding-left: 45%;
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  #j-table td {
+    padding-left: 45%;
+    font-size: 0.5em;
+  }
+}

@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UPSIDA - Office Order</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap 4 Files -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+    <!-- Custom CSS and JS Scripts -->
+    <link rel="stylesheet" href="../css/adistyle.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/Office Order.css" />
+    <script src="../js/script.js"></script>
+
+    <!-- Icons from Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    />
+
+    <style media="screen">
+      @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&display=swap");
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        overflow-x: hidden;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+      }
+      body::-webkit-scrollbar {
+        width: 0 !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="up" style="position:fixed;bottom:10px;right:10px">
+      <a href="#top">
+        <i class="material-icons-round">
+          keyboard_arrow_up
+        </i>
+      </a>
+    </div>
+  <div class="container-fluid">
+  <div class="row">
+        <!-- Navigation Bar for laptops and Desktop -->
+        <div class="navbar-light fixed-top bg-light d-none d-lg-block shadow-sm" style="user-select: none;">
+            <div class="container-fluid">
+                <div class="row" id="top-navbar">
+                    <div class="col-8 align-self-center">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../images/image-desktop-1.png" width="600" height="60" class="d-inline-block align-top" alt="">
+                        </a>
+                    </div>
+                    <div class="col-4 align-self-center">
+                        <form class="float-right">
+                            <button class="btn btn-custom" onclick="window.open('http://webmail.upsidc.com/', '_blank'); return false;">Web Mail</button>
+                            <button class="btn btn-outline-custom" onclick="window.open('Office Login.html', '_self'); return false;">Office Login</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row" id="naviation-bar">
+                    <nav class="navbar navbar-expand-md mx-auto">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="About us.html">About UPSIDA</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="Policy.html">Policies</a>
+                                </li>
+                                  <li class="nav-item dropdown  pl-4 pl-md-0 ml-0 ml-md-4">
+                                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Industrial Info</a>
+                                      <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="Industrial info.html">Industrial Areas</a>
+                                          <a class="dropdown-item" href="https://eservices.onlineupsidc.com/VanvibhaagReport.aspx" target="_blank">Plantation</a>
+                                      </div>
+                                  </li>
+
+                                <li class="nav-item dropdown pl-4 pl-md-0 ml-0 ml-md-4 active">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Resource Center</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="index.html">Industrial Area Operating Process</a>
+                                        <a class="dropdown-item" href="Office Order.html">Office Orders</a>
+                                        <a class="dropdown-item" href="https://www.onlineupsidc.com/pdf/operating_manual_upsidc.pdf" target="_blank">Operating Manual 2011</a>
+                                        <a class="dropdown-item" href="https://www.onlineupsidc.com/pdf/building_230616.pdf" target="_blank">Document for approal of building plan</a>
+                                        <a class="dropdown-item" href="https://www.onlineupsidc.com/pdf/rate_list_245415.pdf" target="_blank">Present Rates</a>
+                                        <a class="dropdown-item" href="Development Process.html">Development Process</a>
+                                        <a class="dropdown-item" href="https://www.onlineupsidc.com/pdf/conditions_tender.pdf" target="_blank">Conditions for tender</a>
+                                        <a class="dropdown-item" href="https://www.onlineupsidc.com/pdf/allotment_form.pdf" target="_blank">Allotment Application Form</a>
+                                        <a class="dropdown-item" href="https://www.onlineupsidc.com/pdf/servicelink_03032015.pdf" target="_blank">Services Rules</a>
+                                        <a class="dropdown-item" href="https://www.onlineupsidc.com/OfcUser_pdf/UPSIDA%20Land%20&%20Building%20Regulations%202018%20updated.pdf" target="_blank">By Laws of UPSIDA</a>
+                                        <a class="dropdown-item" href="https://www.onlineupsidc.com/OfcUser_pdf/OfficeUser2.pdf" target="_blank">Ammendment in UPSIDA Land Development & Building Regulation 2018</a>
+                                        <a class="dropdown-item" href="https://www.onlineupsidc.com/OfcUser_pdf/SECOND%20AMMENDMENT%20IN%20UPSIDA%20LAND%20DEVELOPMENT%20AND%20BUILDING%20REGULATION%202018.pdf" target="_blank">Second Ammendment in UPSIDA Land Development</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="http://gis.onlineupsidc.com/" target="_blank">GIS</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="https://eservices.onlineupsidc.com/" target="_blank">E-Services</a>
+                                </li>
+                                <li class="nav-item dropdown pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Available Plots</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="https://eservices.onlineupsidc.com/Advertisement.aspx" target="_blank">Available Plot list in Nivesh Mitra</a>
+                                        <a class="dropdown-item" href="https://upsida.mjunction.in/" target="_blank">Available Plot in E-Auction</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="https://eservices.onlineupsidc.com/ViewOfficeOrdersPublic.aspx">Office Orders</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                      <a class="nav-link" href="#contact"><i class="material-icons-round">help</i></a>
+                                  </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar for Tablets -->
+        <div class="navbar-light fixed-top bg-light d-none d-lg-none d-md-block d-sm-block shadow-sm">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8 align-self-center">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../images/image-desktop-1.png" width="600" height="60" class="d-inline-block align-top d-none d-sm-none d-md-block" alt="">
+                            <img src="../images/image-1.png" width="150" height="58" class="d-inline-block align-top d-none d-sm-block d-md-none" alt="">
+                        </a>
+                    </div>
+                    <div class="col-4 align-self-center">
+                        <span class="float-right">
+                            <button onclick="openNav()" class="btn btn-custom"><i class="material-icons-round" style="font-size: xlarger; padding: 0.2em;">menu</i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar for Mobile -->
+        <div class="navbar-light fixed-top bg-light d-block d-sm-none shadow-sm">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8 align-self-center">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../images/image-1.png" width="150" height="58" class="d-inline-block align-top d-none d-sm-block d-md-none" alt="">
+                        </a>
+                    </div>
+                    <div class="col-4 align-self-center">
+                        <span class="float-right" style="margin-right:15px;">
+                            <button onclick="openNavMobile()" class="btn btn-custom"><i class="material-icons-round" style="font-size: xlarger; padding: 0.2em;">menu</i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Navigation for Mobile and Tablets -->
+        <div id="mySidenav" class="sidenav shadow-lg">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons-round" style="top: 0.25em; position: relative;"> close </i></a>
+            <ul class="navbar-nav ml-auto py-4 py-md-0">
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="About us.html">About UPSIDA</a>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="Policy.html">Policies</a>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" id="dropdown-btn-industrial-info">Industrial Info<i class="material-icons-round" style="top: 0.25em; position: relative;"> keyboard_arrow_down </i></a>
+                    <div class="dropdown-container-industrial-info" style="display: none;">
+                        <a class="sidebar-dropdown-item dropdown-item text-wrap" href="industrial info.html">Industrial Areas</a>
+                        <a class="sidebar-dropdown-item dropdown-item text-wrap" href="https://eservices.onlineupsidc.com/VanvibhaagReport.aspx" target="_blank">Plantation</a>
+                    </div>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                    <a class="nav-link" id="dropdown-btn-resource-center">Resource Center<i class="material-icons-round" style="top: 0.25em; position: relative;"> keyboard_arrow_down </i></a>
+                    <div class="dropdown-container-resource-center" style="display: none;">
+                      <a class="sidebar-dropdown-item dropdown-item text-wrap" href="../index.html">Industrial Area Operating Process</a>
+                      <a class="sidebar-dropdown-item dropdown-item text-wrap" href="Office Order.html">Office Orders</a>
+                      <a class="sidebar-dropdown-item dropdown-item text-wrap" href="https://www.onlineupsidc.com/pdf/operating_manual_upsidc.pdf" target="_blank">Operating Manual 2011</a>
+                      <a class="sidebar-dropdown-item dropdown-item text-wrap" href="https://www.onlineupsidc.com/pdf/building_230616.pdf" target="_blank">Document for approal of building plan</a>
+                      <a class="sidebar-dropdown-item dropdown-item text-wrap" href="https://www.onlineupsidc.com/pdf/rate_list_245415.pdf" target="_blank">Present Rates</a>
+                      <a class="sidebar-dropdown-item dropdown-item text-wrap" href="Development Process.html">Development Process</a>
+                      <a class="sidebar-dropdown-item dropdown-item text-wrap" href="https://www.onlineupsidc.com/pdf/conditions_tender.pdf" target="_blank">Conditions for tender</a>
+                      <a class="sidebar-dropdown-item dropdown-item text-wrap" href="https://www.onlineupsidc.com/pdf/allotment_form.pdf" target="_blank">Allotment Application Form</a>
+                      <a class="sidebar-dropdown-item dropdown-item text-wrap" href="https://www.onlineupsidc.com/pdf/servicelink_03032015.pdf" target="_blank">Services Rules</a>
+                      <a class="sidebar-dropdown-item dropdown-item text-wrap" href="https://www.onlineupsidc.com/OfcUser_pdf/UPSIDA%20Land%20&%20Building%20Regulations%202018%20updated.pdf" target="_blank">By Laws of UPSIDA</a>
+                      <a class="sidebar-dropdown-item dropdown-item text-wrap" href="https://www.onlineupsidc.com/OfcUser_pdf/OfficeUser2.pdf" target="_blank">Ammendment in UPSIDA Land Development & Building Regulation 2018</a>
+                      <a class="sidebar-dropdown-item dropdown-item text-wrap" href="https://www.onlineupsidc.com/OfcUser_pdf/SECOND%20AMMENDMENT%20IN%20UPSIDA%20LAND%20DEVELOPMENT%20AND%20BUILDING%20REGULATION%202018.pdf" target="_blank">Second Ammendment in UPSIDA Land Development</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" id="dropdown-btn-available-plots">Available Plots<i class="material-icons-round" style="top: 0.25em; position: relative;"> keyboard_arrow_down </i></a>
+                    <div class="dropdown-container-available-plots" style="display: none;">
+                        <a class="sidebar-dropdown-item dropdown-item text-wrap" href="https://eservices.onlineupsidc.com/Advertisement.aspx" target="_blank">Available Plot list in Nivesh Mitra</a>
+                        <a class="sidebar-dropdown-item dropdown-item text-wrap" href="https://upsida.mjunction.in/" target="_blank">Available Plot in E-Auction</a>
+                    </div>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="http://gis.onlineupsidc.com/" target="_blank">GSI</a>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link"  href="https://eservices.onlineupsidc.com/" target="_blank">E-Services</a>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="https://eservices.onlineupsidc.com/ViewOfficeOrdersPublic.aspx">Office Orders</a>
+                </li>
+                <li style="margin-top: 1em;">
+                    <form class="text-center">
+                        <button class="btn btn-custom" onclick= "window.open('http://webmail.upsidc.com/', '_blank'); return false;">Web Mail</button>
+                        <button class="btn btn-outline-custom" onclick="window.open('Office Login.html', '_self'); return false;">Office Login</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row p-0">
+      <div class="col-lg-12 p-0 m-0 mb-3 text-center">
+          <img src="../images/Office Orders.jpg" alt="Office Orders" class="img-fluid mx-auto">
+      </div>
+    </div>
+      <div class="row mx-lg-auto">
+        <div class="col-12">
+          <div class="j-contact-div">
+            <table class="table table-bordered table-striped table-hover" id="j-table">
+              <thead>
+                  <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">Reference No.</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">Date Of Issue</th>
+                    <th scope="col">Section</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Key Words / Meta Data</th>
+                    <th scope="col">More Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="S.No">1</td>
+                    <td data-label="Reference No.">UPSIDA</td>
+                    <td data-label="Year">2021</td>
+                    <td data-label="Date Of Issue">07/07/2021</td>
+                    <td data-label="Section">38th Board Meeting</td>
+                    <td data-label="Category">In reference to Revised Maintenance Fee, 38th Board Meeting</td>
+                    <td data-label="Key Words / Meta Data">Decision made in 38th Board Meeting in reference to Maintenance Fee.</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/748-55revisedmentenancefee.pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">2</td>
+                    <td data-label="Reference No.">UPSIDA</td>
+                    <td data-label="Year">2021</td>
+                    <td data-label="Date Of Issue">07/07/2021</td>
+                    <td data-label="Section">38th Board Meeting</td>
+                    <td data-label="Category">38th Board Revised interest rates.</td>
+                    <td data-label="Key Words / Meta Data">Decision made in 38th Board Meeting in reference to interest rates.</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/732-39board36interest.pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">3</td>
+                    <td data-label="Reference No.">UPSIDA</td>
+                    <td data-label="Year">2021</td>
+                    <td data-label="Date Of Issue">07/04/2021</td>
+                    <td data-label="Section">Industrial Area Work Distribution</td>
+                    <td data-label="Category">Work Distribution Information</td>
+                    <td data-label="Key Words / Meta Data">In reference to addressing problems of allotments. in this regard work
+                        delegation enlisted.</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/ofcodr.pdf" target="_blank">Click here </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">4</td>
+                    <td data-label="Reference No.">4027-34/UPSIDA/ESD</td>
+                    <td data-label="Year">2020</td>
+                    <td data-label="Date Of Issue">22/12/2020</td>
+                    <td data-label="Section">Election Staff Development Software, Nodal Officer Nomination</td>
+                    <td data-label="Category">ESD Software Information</td>
+                    <td data-label="Key Words / Meta Data">In reference to addressing of letters/papers ; ACEO Shri Rajesh Kumar Rai
+                        &amp; ACEO Ms. Neha Jain, UPSIDA</td>
+                    <td data-label="More Details"> <a href="https://www.onlineupsidc.com/OfcUser_pdf/4027-34.pdf" target="_blank">Click here </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">5</td>
+                    <td data-label="Reference No.">4103-09/UPSIDA/ESD</td>
+                    <td data-label="Year">2020</td>
+                    <td data-label="Date Of Issue">30/12/2020</td>
+                    <td data-label="Section">Election Staff Development Software, Nodal Officer Nomination</td>
+                    <td data-label="Category">ESD Software Information</td>
+                    <td data-label="Key Words / Meta Data">Regarding Election Staff Development Software ; Nomination of Shri
+                        Yogenrda Sinha as Nodal Officer, UPSIDA</td>
+                    <td data-label="More Details"> <a href="https://www.onlineupsidc.com/OfcUser_pdf/4103-09.pdf" target="_blank">Click here </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">6</td>
+                    <td data-label="Reference No.">3475/UPSIDA/Transfer</td>
+                    <td data-label="Year">2020</td>
+                    <td data-label="Date Of Issue">11/12/2020</td>
+                    <td data-label="Section">Administration, Transfer Information</td>
+                    <td data-label="Category">Transfer Information</td>
+                    <td data-label="Key Words / Meta Data">Administration, Transfer Information, Shri Anil Kr. Verma, UPSIDA</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/3475.pdf" target="_blank">Click here </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">7</td>
+                    <td data-label="Reference No.">3411/UPSIDA/Administration</td>
+                    <td data-label="Year">2020</td>
+                    <td data-label="Date Of Issue">11/12/2020</td>
+                    <td data-label="Section">Administration</td>
+                    <td data-label="Category">Meeting Postpone</td>
+                    <td data-label="Key Words / Meta Data">Administration, UPSIDA</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/3411.pdf" target="_blank">Click here </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">8</td>
+                    <td data-label="Reference No.">2940/UPSIDA/Position Change</td>
+                    <td data-label="Year">2020</td>
+                    <td data-label="Date Of Issue">11/12/2020</td>
+                    <td data-label="Section">HR</td>
+                    <td data-label="Category">Psition Change</td>
+                    <td data-label="Key Words / Meta Data">Position Change , Mr. Sanjay Tewari, UPSIDA</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/2940.pdf" target="_blank">Click here </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">9</td>
+                    <td data-label="Reference No.">711-717/UPSIDA/ATP By Laws</td>
+                    <td data-label="Year">2020</td>
+                    <td data-label="Date Of Issue">12/10/2020</td>
+                    <td data-label="Section">ATP</td>
+                    <td data-label="Category">By Laws</td>
+                    <td data-label="Key Words / Meta Data">AMENDMENT REGARDING RAIN WATER HARVESTING, BY LAWS.</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/711-717.pdf" target="_blank">Click here </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">10</td>
+                    <td data-label="Reference No.">700-706/UPSIDA/ATP Office Order</td>
+                    <td data-label="Year">2020</td>
+                    <td data-label="Date Of Issue">12/10/2020</td>
+                    <td data-label="Section">ATP</td>
+                    <td data-label="Category">OFFICE ORDER</td>
+                    <td data-label="Key Words / Meta Data">In case of Post Amalgamation of Industrial Plots, provision regarding
+                        execution of Lease Deeds.</td>
+                    <td data-label="More Details"> <a href="https://www.onlineupsidc.com/OfcUser_pdf/700-706.pdf" target="_blank">Click here </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">11</td>
+                    <td data-label="Reference No.">651-658/UPSIDA/ATP Office Order/PLANNED RESOLUTION</td>
+                    <td data-label="Year">2020</td>
+                    <td data-label="Date Of Issue">08/10/2020</td>
+                    <td data-label="Section">ATP</td>
+                    <td data-label="Category">OFFICE ORDER</td>
+                    <td data-label="Key Words / Meta Data">PLANNED RESOLUTIONS</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/651-658%20officeorderplannedres.pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">12</td>
+                    <td data-label="Reference No.">663-669/UPSIDA/ATP BYLAWS/WAREHOUSING</td>
+                    <td data-label="Year">2020</td>
+                    <td data-label="Date Of Issue">08/10/2020</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">OFFICE ORDER</td>
+                    <td data-label="Key Words / Meta Data">Provision Regarding Warehouse &amp; Logistic Parks/Units which have been
+                        granted Infrastructure BY LAWS.</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/663-669%20bylaws.pdf" target="_blank">Click here </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">13</td>
+                    <td data-label="Reference No.">1753-1759/UPSIDA/IA/WAREHOUSING</td>
+                    <td data-label="Year">2020</td>
+                    <td data-label="Date Of Issue">12/10/2020</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">OFFICE ORDER</td>
+                    <td data-label="Key Words / Meta Data">Provision Regarding Warehouse &amp; Logistic Parks/Units which have been
+                        granted Infrastructure.</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/1753-1759%20office%20order.pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">14</td>
+                    <td data-label="Reference No.">7621-7631/SIDC/ESTABLISHMENT/RTI-VIVIDH</td>
+                    <td data-label="Year">2018</td>
+                    <td data-label="Date Of Issue">18/12/2018</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Position Transfer</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Position_Transfer(1).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">15</td>
+                    <td data-label="Reference No.">3939-40/SIDC/IA Policy Vol-17</td>
+                    <td data-label="Year">2018</td>
+                    <td data-label="Date Of Issue">19/03/2018</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">MAINTENACE CHARGES</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/MAINTENACE_CHARGES(2).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">16</td>
+                    <td data-label="Reference No.">252/SIDC/PM/KANNAUJ</td>
+                    <td data-label="Year">2018</td>
+                    <td data-label="Date Of Issue">15/03/2018</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">UPDATE NAME</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/UPDATE_NAME(3).pdf" target="_blank">Click here </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">17</td>
+                    <td data-label="Reference No.">2488-91/SIDC/IA Policy Vol-17</td>
+                    <td data-label="Year">2017</td>
+                    <td data-label="Date Of Issue">11/10 /2017</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Time Enhancement</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Time_Enhancement(4).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">18</td>
+                    <td data-label="Reference No.">-</td>
+                    <td data-label="Year">2017</td>
+                    <td data-label="Date Of Issue">11/10/2017</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Transfer of Land</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/TransferOfLand(5).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">19</td>
+                    <td data-label="Reference No.">2497-95/SIDC/IA Policy Vol -17</td>
+                    <td data-label="Year">2017</td>
+                    <td data-label="Date Of Issue">14/06/2017</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Infrastructure</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Infrastructure(6).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">20</td>
+                    <td data-label="Reference No.">2484-87/SIDC/IA Policy Vol-17</td>
+                    <td data-label="Year">2017</td>
+                    <td data-label="Date Of Issue">14/06/2017</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Position of Land</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/PositionOfLand(7).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">21</td>
+                    <td data-label="Reference No.">675/SIDC/IA sect</td>
+                    <td data-label="Year">2017</td>
+                    <td data-label="Date Of Issue">14/06/2017</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Transfer of Land</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/TransferOfLand_IAAct(8).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">22</td>
+                    <td data-label="Reference No.">671-674/SIDC/IA/Policy vol-17</td>
+                    <td data-label="Year">2017</td>
+                    <td data-label="Date Of Issue">14/06/2017</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Land Allotment Policy EODB</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Land%20Allotment%20Policy%20EODB(9).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">23</td>
+                    <td data-label="Reference No.">667-670/SIDC/IA/Policy vol-17</td>
+                    <td data-label="Year">2017</td>
+                    <td data-label="Date Of Issue">14/06/2017</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Maintenance Charges</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/MaintenanceCharges(10).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">24</td>
+                    <td data-label="Reference No.">663-666/SIDC/IA/Policy vol-17</td>
+                    <td data-label="Year">2017</td>
+                    <td data-label="Date Of Issue">14/06/2017</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Reservation money</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/ReservationMoney(11).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">25</td>
+                    <td data-label="Reference No.">87-130/SIDC/PM/FACILITIES</td>
+                    <td data-label="Year">2017</td>
+                    <td data-label="Date Of Issue">20/06/2017</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Fire Station</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/FireStation(12).pdf" target="_blank">Click here </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">26</td>
+                    <td data-label="Reference No.">3299-3301/SIDC/IA/Policy vol-16</td>
+                    <td data-label="Year">2017</td>
+                    <td data-label="Date Of Issue">23/02/2017</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Change in fee for sub division of plots</td>
+                    <td data-label="More Details"><a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/Change%20in%20fee%20for%20sub%20division%20of%20plots(13).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">27</td>
+                    <td data-label="Reference No.">3268-74/SIDC/IA</td>
+                    <td data-label="Year">2016</td>
+                    <td data-label="Date Of Issue">02/09/2016</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Change of Land category</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Change%20of%20Land%20category(14).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">28</td>
+                    <td data-label="Reference No.">3242-46/SIDC/IA/Policy vol-16</td>
+                    <td data-label="Year">2016</td>
+                    <td data-label="Date Of Issue">02/08/2016</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Land Allotment for reserved category</td>
+                    <td data-label="More Details"><a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/Land%20Allotment%20for%20reserved%20category(15).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">29</td>
+                    <td data-label="Reference No.">356-359/SIDC/IA/Mis-Meerut</td>
+                    <td data-label="Year">2016</td>
+                    <td data-label="Date Of Issue">02/05/2016</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Change of land category</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Change%20of%20land%20category(16).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">30</td>
+                    <td data-label="Reference No.">349-352/SIDC/IA/Policy vol-16</td>
+                    <td data-label="Year">2016</td>
+                    <td data-label="Date Of Issue">02/05/2016</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Time extension</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Time_extension(17).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">31</td>
+                    <td data-label="Reference No.">345-348/SIDC/IA/Policy XV</td>
+                    <td data-label="Year">2016</td>
+                    <td data-label="Date Of Issue">02/05/2016</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Transfer of land</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/TransferOfLland_PolicyXV(18).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">32</td>
+                    <td data-label="Reference No.">1036-1041/SIDC/IA/Policy vol- 16</td>
+                    <td data-label="Year">2016</td>
+                    <td data-label="Date Of Issue">29/06/2016</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Timelines for land allotment applications</td>
+                    <td data-label="More Details"><a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/Timelines%20for%20land%20allotment%20applications(19).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">33</td>
+                    <td data-label="Reference No.">82-89/SIDC/P</td>
+                    <td data-label="Year">2016</td>
+                    <td data-label="Date Of Issue">29/06/2016</td>
+                    <td data-label="Section">EODB</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Land and Construction permit</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Land%20and%20Construction%20permit(20).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">34</td>
+                    <td data-label="Reference No.">78-81/SIDC/P</td>
+                    <td data-label="Year">2016</td>
+                    <td data-label="Date Of Issue">29/06/2016</td>
+                    <td data-label="Section">EODB</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Building plan approval</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Building%20plan%20approval(21).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">35</td>
+                    <td data-label="Reference No.">74-77/SIDC/Policy-P</td>
+                    <td data-label="Year">2016</td>
+                    <td data-label="Date Of Issue">02/05/2016</td>
+                    <td data-label="Section">EODB</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Completion / occupancy certificate</td>
+                    <td data-label="More Details"><a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/Completion_OR_occupancy%20certificate(22).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">36</td>
+                    <td data-label="Reference No.">1245-48/SIDC/IA/Policy vol-16</td>
+                    <td data-label="Year">2016</td>
+                    <td data-label="Date Of Issue">18/07/2016</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Free hold of industrial plot</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Free%20hold%20of%20industrial%20plot(23).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">37</td>
+                    <td data-label="Reference No.">1635-38/SIDC/IA/Policy vol 16</td>
+                    <td data-label="Year">2016</td>
+                    <td data-label="Date Of Issue">08/09/2016</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Revision of time line</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Revision%20of%20time%20line(24).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">38</td>
+                    <td data-label="Reference No.">1830/SIDC/IA/Policy vol-16</td>
+                    <td data-label="Year">2015</td>
+                    <td data-label="Date Of Issue">14/01/2015</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Time extension</td>
+                    <td data-label="More Details"><a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/Time%20extension_IA_Policy%20vol-16(25).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">39</td>
+                    <td data-label="Reference No.">1835/SIDC/IA/Policy vol-16</td>
+                    <td data-label="Year">2015</td>
+                    <td data-label="Date Of Issue">14/01/2015</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Land allotment for Telecom towers</td>
+                    <td data-label="More Details"><a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/Land%20allotment%20for%20Telecom%20towers_IA_Policy%20vol-16(26).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">40</td>
+                    <td data-label="Reference No.">115-119/SIDC/IA/HO</td>
+                    <td data-label="Year">2015</td>
+                    <td data-label="Date Of Issue">21/04/2015</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Land allotment for reserved plots</td>
+                    <td data-label="More Details"><a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/Land%20allotment%20for%20reserved%20plots_IA_HO(27).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">41</td>
+                    <td data-label="Reference No.">110-114/SIDC/IA/Policy vol-16</td>
+                    <td data-label="Year">2015</td>
+                    <td data-label="Date Of Issue">21/04/2015</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Time Extension for allotted vacant plots</td>
+                    <td data-label="More Details"><a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/Time%20Extension%20for%20allotted%20vacant%20plots_Policy%20Vol-16(28).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">42</td>
+                    <td data-label="Reference No.">105-109/SIDC/IA/Policy issue, MD's refernce</td>
+                    <td data-label="Year">2015</td>
+                    <td data-label="Date Of Issue">21/04/2015</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Land Allotment through lottery</td>
+                    <td data-label="More Details"><a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/Land%20Allotment%20through%20lottery(29).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">43</td>
+                    <td data-label="Reference No.">1611-14/UPSIDC/IA/Policy vol - 16</td>
+                    <td data-label="Year">2015</td>
+                    <td data-label="Date Of Issue">31/08/2015</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Increase in Maintenance charges</td>
+                    <td data-label="More Details"><a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/Increase%20in%20Maintenance%20charges(30).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">45</td>
+                    <td data-label="Reference No.">650-653/SIDC/MD Camp</td>
+                    <td data-label="Year">2014</td>
+                    <td data-label="Date Of Issue">14/08/2014</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">New Rates for Lease Rent</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/New%20Rates%20for%20Lease%20Rent(31).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">46</td>
+                    <td data-label="Reference No.">804/SIDC/IA/Policy issue MPS</td>
+                    <td data-label="Year">2014</td>
+                    <td data-label="Date Of Issue">08/08/2014</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Process Simplification, Allotment ,Lease rent ,Time extension charges, Operational unit, Transfer, rent, Mortgage</td>
+                    <td data-label="More Details"> <a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/ProcessSimplification_Policy%20issueMPS(32).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">47</td>
+                    <td data-label="Reference No.">209-11/SIDC/IA/HO/policy vol-16</td>
+                    <td data-label="Year">2013</td>
+                    <td data-label="Date Of Issue">25/04/2013</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Changes in Operating manual clause no. 6.07(V),(VIII), 8.01</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Changes%20in%20Operating%20manual(33).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">48</td>
+                    <td data-label="Reference No.">513-518/SIDC/HO/Documentation to RM-2007-2008</td>
+                    <td data-label="Year">2012</td>
+                    <td data-label="Date Of Issue">30/05/2012</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">RM power delegation allotment, map approval</td>
+                    <td data-label="More Details"><a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/RM%20power%20delegation%20allotment(34).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">49</td>
+                    <td data-label="Reference No.">193-95/SIDC/IA/HO/Rates 9,10/10-11</td>
+                    <td data-label="Year">2013</td>
+                    <td data-label="Date Of Issue">25/04/2013</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Committee Constitution</td>
+                    <td data-label="Key Words / Meta Data">Rate Revision committee</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Rate%20Revision%20committee(35).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">50</td>
+                    <td data-label="Reference No.">203-05/SIDC/IA/HO/Policy vol-16</td>
+                    <td data-label="Year">2012</td>
+                    <td data-label="Date Of Issue">25/04/2012</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Transfer Levy for plots reserved for school nursing home, testing lab etc</td>
+                    <td data-label="More Details"><a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/Transfer%20Levy%20for%20plots%20reserved(36).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">51</td>
+                    <td data-label="Reference No.">3331-34/SIDC/IA/HO/Policy-vol-XV</td>
+                    <td data-label="Year">2011</td>
+                    <td data-label="Date Of Issue">24/01/2011</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">open ended advertisement policy</td>
+                    <td data-label="More Details"><a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/Open%20ended%20advertisement%20policy(37).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">52</td>
+                    <td data-label="Reference No.">3327-30/SIDC/IA/HO/Policy vol XV</td>
+                    <td data-label="Year">2011</td>
+                    <td data-label="Date Of Issue">24/01/2011</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">buy back policy</td>
+                    <td data-label="https://www.onlineupsidc.com/OfcUser_pdf/Buy%20back%20policy(38).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">53</td>
+                    <td data-label="Reference No.">1587-88-UPSIDC-IA-Policy-XV</td>
+                    <td data-label="Year">2011</td>
+                    <td data-label="Date Of Issue">07/10/2011</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">merger of companies</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Merger%20of%20companies(39).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">54</td>
+                    <td data-label="Reference No.">1370-72/SIDC/HO/Policy XV</td>
+                    <td data-label="Year">2011</td>
+                    <td data-label="Date Of Issue">07/10/2011</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Relaxation in Premium Rate, Group Housing</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Relaxation%20in%20Premium%20Rate(40).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">55</td>
+                    <td data-label="Reference No.">73 to 876/SIDC/IA/HO/Premium Rates 9-10</td>
+                    <td data-label="Year">2011</td>
+                    <td data-label="Date Of Issue">09/08/2011</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Premium Rate revision policy</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/pdf2/873_876_09_08_2011.pdf" target="_blank">Click here </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">56</td>
+                    <td data-label="Reference No.">869-872/SIDC/IA/HO/Policy vol-15</td>
+                    <td data-label="Year">2011</td>
+                    <td data-label="Date Of Issue">09/08/2011</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Time Extension</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Time%20Extension_PolicyVol-15(42).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">57</td>
+                    <td data-label="Reference No.">865 to 868/SIDC/IA/HO/Policy vol-15</td>
+                    <td data-label="Year">2011</td>
+                    <td data-label="Date Of Issue">09/08/2011</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Transfer levy</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Transfer%20levy_PolicyVol-15(43).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">58</td>
+                    <td data-label="Reference No.">515-518/SIDC/IA/OPERATING MANUAL 2010-11</td>
+                    <td data-label="Year">2011</td>
+                    <td data-label="Date Of Issue">21/06/2011</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Operating manual</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/Operating%20manual(44).pdf" target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">59</td>
+                    <td data-label="Reference No.">3078-81/sidc/IA /Policy vol XV</td>
+                    <td data-label="Year">2010</td>
+                    <td data-label="Date Of Issue">28/12/2010</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data"> Reservation Money,Restoration,Controlling interest, Subdivision ,Time extension, Subletting,Group Housing ,Commercial Bids ,Auction</td>
+                    <td data-label="More Details"> <a
+                        href="https://www.onlineupsidc.com/OfcUser_pdf/Reservation%20Money_Restoration_PolicyVol-XV(45).pdf"
+                        target="_blank"
+                        >Click here
+                      </a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="S.No">60</td>
+                    <td data-label="Reference No.">1218-20/sida/OfficeOrder</td>
+                    <td data-label="Year">2019</td>
+                    <td data-label="Date Of Issue">20/05/2019</td>
+                    <td data-label="Section">Industrial Area</td>
+                    <td data-label="Category">Policy Amendment</td>
+                    <td data-label="Key Words / Meta Data">Related to land Allotment &amp; building plan map approval of industrial plots</td>
+                    <td data-label="More Details"><a href="https://www.onlineupsidc.com/OfcUser_pdf/OfficeOrder1.pdf" target="_blank">Click here </a></td>
+                  </tr>
+
+                </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <div class="" style="padding: 0 !important">
+      <!--jeetesh-->
+
+      <div class="row">
+        <div class="col-12">
+          <div class="j-footer-div">
+            <footer>
+              <div class="j-footer">
+                <div class="j-footer-about text-justify">
+                  <p>
+                    Content on this website is published and managed by Uttar
+                    Pradesh State Industrial Development Authority. For any
+                    query regarding this website, please contact the
+                    “ADMINISTRATOR”.
+                  </p>
+                  <ul class="j-footer-social">
+                    <li class="facebook">
+                      <a href="https://www.facebook.com/UPSIDAGoUP">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="twitter">
+                      <a href="https://twitter.com/upsida">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="j-morelinks">
+                  <h2>Important Links</h2>
+                  <ul>
+                    <li>
+                      <a href="https://up.gov.in/"
+                        >Government Of Uttar Pradesh</a
+                      >
+                    </li>
+                    <li>
+                      <a href="http://www.udyogbandhu.com/"
+                        >Department Of Infrastructure & Industrial
+                        Development</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://etender.up.nic.in/nicgep/app"
+                        >Tenders Uttar Pradesh</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="j-morelinks j-contact">
+                  <h2 id="contact">Contact Us</h2>
+                  <ul>
+                    <li><a href="Head Office.html">Head Office</a></li>
+                    <li><a href="Project Office.html">Regional/Project Office</a></li>
+                    <li><a href="Divisional Office.html">Divisional Office</a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+            <div class="j-copyright">
+              <p>Copyright © UPSIDA, U.P., India | All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--jeeteshend-->
+    </div>
+  </body>
+</html>
